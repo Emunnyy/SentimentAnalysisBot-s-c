@@ -81,7 +81,7 @@ class MLTrader(Strategy):
                 self.submit_order(order)
                 self.last_trade = "sell"
 
-chosen_symbol = "ES1!" #CHANGE SYMBOL HERE
+chosen_symbol = "SPY" #CHANGE SYMBOL HERE
 
 broker = Alpaca(ALPACA_CREDS)
 strategy = MLTrader(name='mlstrat', broker=broker, parameters={"symbol": chosen_symbol, "cash_at_risk": .5})
